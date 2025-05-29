@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Alunos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Cadastro de Alunos</h1>
+
+  <input type="text" id="nome" placeholder="Nome do aluno" />
+  <select id="nota">
+    <option value="I">I</option>
+    <option value="R">R</option>
+    <option value="B">B</option>
+    <option value="NB">NB</option>
+  </select>
+  <button onclick="adicionarAluno()">Adicionar</button>
+
+  <hr />
+
+  <label for="filtro">Filtrar por nota:</label>
+  <select id="filtro" onchange="filtrarAlunos()">
+    <option value="Todos">Todos</option>
+    <option value="I">I</option>
+    <option value="R">R</option>
+    <option value="B">B</option>
+    <option value="NB">NB</option>
+  </select>
+
+  <ul id="lista-alunos"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
